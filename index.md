@@ -28,17 +28,17 @@ As part of my journey into machine learning techniques for solving partial diffe
 - **Authors**: Zongyi Li, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, Kaushik Bhattacharya, Andrew Stuart, Anima Anandkumar
 - **Keywords**: FNO, PDE, Neural Operator, Fourier Transform, Deep Learning
 
-## 🧠 Traditional Neural Networks for PDEs
+## Traditional Neural Networks for PDEs
 
 In traditional neural networks (NNs), both inputs and outputs are discrete vectors. When solving PDEs, this typically means representing the initial condition of a system, say a function $a(x)$, by sampling its values at specific grid points, such as $a(x_1), a(x_2), \ldots, a(x_n)$. Similarly, the output, such as the solution $u(x)$ after some time $t$, is represented as values at these same grid points, e.g., $u(x_1), u(x_2), \ldots, u(x_n)$. 
 
 For example, consider modeling the temperature in a room. You might divide the room into 1000 grid points, assign initial temperatures (e.g., 30°C near an air conditioner and 5°C near a window), and train the network to predict the temperature at these 1000 points after 30 minutes, say converging to 25°C everywhere. The network learns patterns from many such scenarios. However, this approach has limitations: it cannot generalize to different grid sizes or configurations, nor can it accurately predict outcomes for untrained initial conditions (e.g., 100°C near the air conditioner and -50°C near the window). Additionally, updating the state of all 1000 points at each layer of the network is computationally expensive.
 
-## 🧠 Neural Operators (NO)
+## Neural Operators (NO)
 
 To address these limitations, Neural Operators (NOs) were proposed. Unlike traditional NNs, NOs take functions as inputs and produce functions as outputs, learning the mapping (or “operator”) from an initial condition $a(x)$ to a solution $u(x)$ after time $t$. This allows NOs to handle different grid resolutions and unseen initial conditions. However, NOs still rely on discretizing the space into grid points and computing interactions between them, which involves costly integral operations, making them impractical for many real-world applications.
 
-## 🧠 Fourier Neural Operator (FNO)
+## Fourier Neural Operator (FNO)
 
 The Fourier Neural Operator (FNO) builds on the concept of NOs but introduces a game-changing approach by leveraging the Fourier transform to make computations efficient and practical. Instead of working in the spatial domain, FNO transforms the input function (e.g., the initial condition $a(x)$) into the frequency domain using the Fourier transform, breaking it down into a combination of sine and cosine waves of different frequencies.
 
