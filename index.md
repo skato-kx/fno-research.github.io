@@ -20,7 +20,7 @@ title: FNO Summary
 
 # Exploring the Fourier Neural Operator: My Summary and Insights
 
-As part of my journey into machine learning techniques for solving partial differential equations (PDEs), I recently explored the Fourier Neural Operator (FNO) introduced in the paper *Fourier Neural Operator for Parametric Partial Differential Equations*. This approach is a fascinating departure from traditional neural network methods and even other PDE solvers like Physics-Informed Neural Networks (PINNs). In this post, I aim to summarize the key ideas behind FNO in an intuitive way, making it accessible for beginners while avoiding overly complex mathematical details. My goal is to provide a clear understanding of how FNO works and why it’s a significant advancement in solving PDEs.
+As part of my journey into machine learning techniques for solving partial differential equations (PDEs), I recently explored the Fourier Neural Operator (FNO) introduced in the paper *Fourier Neural Operator for Parametric Partial Differential Equations*. This approach is a fascinating departure from traditional neural network methods and even other PDE solvers like Physics-Informed Neural Networks (PINNs). In this post, I aim to summarize the key ideas behind FNO in an intuitive way, making it accessible for beginners while avoiding overly complex mathematical details. My goal is to provide a clear understanding of how FNO works and why it’s a significant advancement in solving PDEs. You can also view my easy implementation here. [View my implementation](https://github.com/skato-kx/fno-research.github.io)
 
 ## 🔗 Paper Info
 
